@@ -52,8 +52,20 @@ cat > $file <<EOF
 #Every time I use run.sh, the enviroment variables will be set, after use that will be unsetted.
 
 
-export PATH="\$PATH:$the_tool_chain_path"
-export IDF_PATH="$the_sdk_path"
+PROJECT_ROOT=../..
+TOOLS_PATH=\$PROJECT_ROOT/tool
+SDK_PATH=\$PROJECT_ROOT/sdk
+APP_PATH=\$PROJECT_ROOT/app
+
+XTENSA_ESP32_ELF_PATH=\$TOOLS_PATH/xtensa-esp32-elf
+ESP_IDF_PATH=\$SDK_PATH/esp-idf
+
+the_sdk_path=\`cd \$ESP_IDF_PATH; pwd\`
+the_tool_chain_path=\`cd \$XTENSA_ESP32_ELF_PATH/bin; pwd\`
+
+export PATH="\$PATH:\$the_tool_chain_path"
+export IDF_PATH="\$the_sdk_path"
+
 
 if [ "\$1" == "config" ]; then
     make menuconfig
