@@ -41,8 +41,8 @@ Clean:
 
 #### 4. Links
 
-[[1]. espressif esp-idf github][#1]
-[[2]. ESP-IDF Programming Guide][#2]
+[[1]. espressif esp-idf github][#1]       
+[[2]. ESP-IDF Programming Guide][#2]            
 
 
 
