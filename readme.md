@@ -38,3 +38,16 @@ Clean:
 #### 3. Demo-Apps
 
 - bt_discovery : 10s-loop to discovery the ble device
+
+#### 4. Links
+
+[[1]. espressif esp-idf github][#1]
+[[2]. ESP-IDF Programming Guide][#2]
+
+
+
+
+
+
+[#1]:https://github.com/espressif/esp-idf
+[#2]:https://docs.espressif.com/projects/esp-idf/en/v3.1.1/index.html
