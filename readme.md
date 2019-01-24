@@ -43,7 +43,7 @@ Clean:
 
 [[1]. espressif esp-idf github][#1]       
 [[2]. ESP-IDF Programming Guide][#2]            
-
+[[3]. Ali-IOT platform product creation experience, Linux SDK parsing, transplanting aliyun-esp based on ESP32 to achieve hardware and cloud interaction (hard core, dry goods)][#3]
 
 
 
@@ -51,3 +51,4 @@ Clean:
 
 [#1]:https://github.com/espressif/esp-idf
 [#2]:https://docs.espressif.com/projects/esp-idf/en/v3.1.1/index.html
+[#3]:https://www.cnblogs.com/zjutlitao/p/10269835.html
