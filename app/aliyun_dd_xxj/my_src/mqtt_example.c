@@ -15,10 +15,10 @@
 #include "cJSON.h"
 
 // #define PRODUCT_KEY                  NULL
-#define PRODUCT_KEY                     "a1QynQ2BCLJ"
-#define PRODUCT_SECRET                  "GGhRmKHLS632t8WX"
-#define DEVICE_NAME                     "device1"
-#define DEVICE_SECRET                   "TbJkO9e2cMusqkDzXdasoVVJe7OdgjXx"
+#define PRODUCT_KEY                     "a15Ws4gOoAP"
+#define PRODUCT_SECRET                  "90CusBMPSkclFUpn"
+#define DEVICE_NAME                     "develop1"
+#define DEVICE_SECRET                   "jcTRzLc8kY5MxkPDUViMyRZJBHFt7TyN"
       
 /* These are pre-defined topics */
 #define TOPIC_UPDATE                    "/"PRODUCT_KEY"/"DEVICE_NAME"/user/update"
