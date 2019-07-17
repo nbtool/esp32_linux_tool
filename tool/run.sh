@@ -30,6 +30,8 @@ function install_esp_idf(){
     if [ ! -d $ESP_IDF_PATH ]; then
         git clone $ESP_IDF_LINK 
         mv esp-idf $SDK_PATH/
+        echo "> install the esp idf needed python packages ..."
+        /usr/bin/python2 -m pip install --user -r $ESP_IDF_PATH/requirements.txt
     fi
 }
 
