@@ -47,6 +47,13 @@ function install_project_from_github(){
         # cp config.esp32.aos to ./iotkit-embedded/src/board/
         cp ./my_src/config.esp32.aos ./iotkit-embedded/src/board/
     fi
+
+    cd $ESP_IDF_PATH
+    git checkout release/v3.3
+    cd -
+
+    python --version
+    python -m pip install -r $ESP_IDF_PATH/requirements.txt
 }
 
 function sdk_op(){
