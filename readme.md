@@ -10,6 +10,10 @@ You can directly create、write、build、install APP(HEX/BIN) without using IDE
 If it is the first time to compile, It is recommended to run goto tool directly, and then run the 'bash run.sh tool' to download gcc、SDK、build-tools etc.
 
 	cd tool
+    python3.9 -m venv ./pvevn
+    cd pvevn
+    source ./bin/activate
+    cd -
     bash run.sh help
 	bash run.sh tool
 

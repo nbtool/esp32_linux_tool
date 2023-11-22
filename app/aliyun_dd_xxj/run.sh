@@ -50,10 +50,10 @@ function install_project_from_github(){
 
     cd $ESP_IDF_PATH
     git checkout release/v3.3
-    cd -
-
     python --version
     python -m pip install -r $ESP_IDF_PATH/requirements.txt
+    git submodule update
+    cd -
 }
 
 function sdk_op(){

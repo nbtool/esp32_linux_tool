@@ -19,8 +19,8 @@ the_tool_chain_path=`cd $XTENSA_ESP32_ELF_PATH/bin; pwd`
 export PATH="$PATH:$the_tool_chain_path"
 export IDF_PATH="$the_sdk_path"
 
-GIT_ESP_ALIYUN_LINK=git@github.com:oldprogram/esp-aliyun.git
-GIT_IOTKIT_EMBEDDED_LINK=git@github.com:oldprogram/iotkit-embedded.git
+GIT_IOTKIT_EMBEDDED_LINK=https://github.com/oldprogram/iotkit-embedded.git
+GIT_ESP_ALIYUN_LINK=https://github.com/oldprogram/esp-aliyun.git
 #GIT_ESP_ALIYUN_LINK=https://github.com/espressif/esp-aliyun.git
 #GIT_IOTKIT_EMBEDDED_LINK=https://github.com/aliyun/iotkit-embedded.git
 
@@ -50,10 +50,10 @@ function install_project_from_github(){
 
     cd $ESP_IDF_PATH
     git checkout release/v3.3
-    cd -
-
     python --version
     python -m pip install -r $ESP_IDF_PATH/requirements.txt
+    git submodule update
+    cd -
 }
 
 function sdk_op(){
